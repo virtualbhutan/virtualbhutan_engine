@@ -1,7 +1,7 @@
-namespace :basic_engine do
+namespace :virtualbhutan do
    desc "Syncronize extra files for basic engine."
    task :sync do
-     system "rsync -ruv --exclude '.*' vendor/plugins/basic_engine/public ."
+     system "rsync -ruv --exclude '.*' vendor/plugins/virtualbhutan_engine/public ."
    end
    
    desc "Installs dependent plugins for basic engine."
@@ -28,6 +28,6 @@ namespace :basic_engine do
 
    desc "Copies necessary migrations and public files of dependencies."   
    task :deploy_dependencies do
-     ['authenticated_system', 'basic_engine', 'complex_scripts'].each{|plugin|  system "rake #{plugin}:sync" }
+     ['authenticated_system', 'virtualbhutan', 'complex_scripts'].each{|plugin|  system "rake #{plugin}:sync" }
    end   
 end
