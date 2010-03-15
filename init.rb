@@ -2,5 +2,5 @@
 require 'hpricot'
 require 'patches/traverse'
 require 'patches/active_resource'
-ActionView::Base.send :include, BasicEngineHelper
+ActionView::Base.send :include, VirtualbhutanEngineHelper
 ActionView::Base.send :include, TinyMceExtensionHelper
