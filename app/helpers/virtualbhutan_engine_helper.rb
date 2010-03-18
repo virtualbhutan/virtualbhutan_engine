@@ -28,4 +28,8 @@ module VirtualbhutanEngineHelper
   def header(*args)
     render :partial => 'main/header'  
   end  
+  
+  def footer
+    render :partial => 'main/footer'  
+  end  
 end
