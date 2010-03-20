@@ -83,7 +83,7 @@ h4>a, h4>a:visited { color: #404040; }
 
 h3 {
   padding: 7px; 
-  margin: 5px 15px 5px 5px; 
+  margin: 5px 15px 5px 0; 
   font-size: 18px;
   float: center;
   color : #fff;
